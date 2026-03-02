@@ -29,15 +29,15 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Преимущества</a>
+                    <a class="nav-link" href="#">ПРЕИМУЩЕСТВА</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Фотографии</a>
+                    <a class="nav-link" href="#">ФОТОГРАФИИ</a>
                 </li>
             </ul>
         </div>
 
-        <a href="#" class="btn btn-red">Вход</a>
+        <a href="#" class="btn btn-red">ВХОД</a>
     </div>
 </nav>
 
@@ -52,49 +52,43 @@
             ведомство, относящееся к федеральному правительству США и подчиняющееся непосредственно президенту США.
         </p>
 
-        <div class="row align-items-center mt-5">
+        <div class="hero-content-row d-flex align-items-center justify-content-center mt-5">
 
+    <div class="hero-image">
+        <img src="{% static 'landing/images/earth.png' %}" class="rounded shadow">
+    </div>
 
-            <div class="col-lg-6 mb-4">
-                <img src="{% static 'landing/images/earth.png' %}" class="img-fluid rounded shadow">
-            </div>
-
-
-            <div class="col-lg-6 text-start">
-                <div class="row">
-
-                    <div class="col-6 feature-item">
-                        <div class="feature-icon">
-                            {% include "landing/icons/fa6-solid_shuttle-space.svg.html" %}
-                        </div>
-                        <p>Спейс шаттлы — пилотируемые корабли</p>
-                    </div>
-
-                    <div class="col-6 feature-item">
-                        <div class="feature-icon">
-                            {% include "landing/icons/ion_telescope.svg.html" %}
-                        </div>
-                        <p>Лучшее телескопическое оборудование</p>
-                    </div>
-
-                    <div class="col-6 feature-item">
-                        <div class="feature-icon">
-                            {% include "landing/icons/bi_moon-stars-fill.svg.html" %}
-                        </div>
-                        <p>Исследовательские станции на Луне</p>
-                    </div>
-
-                    <div class="col-6 feature-item">
-                        <div class="feature-icon">
-                            {% include "landing/icons/bxs_medal.svg.html" %}
-                        </div>
-                        <p>Золотая медаль по научным исследованиям</p>
-                    </div>
-
+    <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    {% include "landing/icons/fa6-solid_shuttle-space.svg.html" %}
                 </div>
+                <p class="text_top">Спейс шаттлы — пилотируемые корабли</p>
             </div>
 
-        </div>
+            <div class="feature-item">
+                <div class="feature-icon">
+                    {% include "landing/icons/ion_telescope.svg.html" %}
+                </div>
+                <p class="text_top">Лучшее телескопическое оборудование</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    {% include "landing/icons/bi_moon-stars-fill.svg.html" %}
+                </div>
+                <p class="text_down">Исследовательские станции на Луне — шаг к новым открытиям!</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    {% include "landing/icons/bxs_medal.svg.html" %}
+                </div>
+                <p class="text_down">Золотая медаль по научным исследованиям</p>
+            </div>
+    </div>
+
+</div>
 
     </div>
 </section>

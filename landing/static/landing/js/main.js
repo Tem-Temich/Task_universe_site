@@ -18,6 +18,7 @@ $(document).ready(function () {
     $mainSlider.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        initialSlide: 2,
         fade: true,
         arrows: true,
         prevArrow: $('.custom-prev'),
@@ -29,6 +30,7 @@ $(document).ready(function () {
     $thumbSlider.slick({
         slidesToShow: 5,
         slidesToScroll: 1,
+        initialSlide: 2,
         asNavFor: '.slider-for',
         focusOnSelect: true,
         arrows: false,
@@ -52,10 +54,20 @@ $(document).ready(function () {
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 4,
+                    infinite: false,
+                    centerMode: false
                 }
             }
         ]
     });
+
+    // full screen просмотр с крестиком закрытия
+    if ($.fn.slickLightbox) {
+        $mainSlider.slickLightbox({
+            itemSelector: '.slide-item a',
+            src: 'href'
+        });
+    }
 
 });
